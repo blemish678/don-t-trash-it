@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't Trash It</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fcfdf9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-image: url('./C:\Users\HP\Documents\avenue-815297_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem 4rem;
+      color: white;
+      text-align: center;
+      border-bottom: 5px dotted #d9e8d9;
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #c9e4c5;
+      padding: 1rem;
+    }
+   
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.8rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #3b4d39;
+      background-color: #e3f4df;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-weight: bold;
+    }
+  
+    nav a {
+      margin: 0 1.2rem;
+      color: #355e3b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      width: 120px;
+      height: 130px;
+      border-radius: 60px 60px 12px 12px;
+      background-color: #f0f5ee;
+      border: 2px solid #c9e4c5;
+      text-align: center;
+      padding: 1rem 0.5rem;
+      font-size: 0.95rem;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+     .tab:hover {
+      transform: translateY(-5px);
+      background-color: #eaf5e3;
+    }
+
+    .tab img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .text-section {
+      background-color: #f6fdf5;
+      border: 2px dashed #d0e8d0;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .text-section h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2rem;
+      color: #355e3b;
+      margin-bottom: 1rem;
+    }
+
+    .text-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #c9e4c5;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      border-top: 4px dotted #b6d9b6;
+    }
+
+    .calendar, .todo, .notes {
+      background-color: #f6fdf5;
+      border: 1px solid #d0e8d0;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #c9e4c5;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .todo ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .todo li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .notes ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Don't Trash It</h1>
+    <p>Turn clutter into kindness — donate, reuse, upcycle.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#donate">Donate</a>
+    <a href="#diy">Upcycle</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1sMhnafg19LiOO3_G2vA11H0Zq8WYsLDey3-qPkomIQRgcQ/viewform">Get Involved</a>
+  </nav>
+
+  <div class="tabs">
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Donate">
+      <p>Donate</p>
+    </div>
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="DIY">
+      <p>Upcycle</p>
+    </div>
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/151/151773.png" alt="Contact">
+      <p><a href= "https://docs.google.com/forms/d/e/1FAIpQLSf1sMhnafg19LiOO3_G2vA11H0Zq8WYsLDey3-qPkomIQRgcQ/viewform">Get Involved</a></p>
+    </div>
+  </div>
+
+  <div class="section text-section">
+    <h2>🌍 How You Can Help the Planet?</h2>
+    <p>Small actions make a big difference. Instead of tossing unused items, find new ways to donate or upcycle. From books and clothes to electronics and furniture — there's always someone who can use them.</p>
+    <p>Support local schools, orphanages, and NGOs by giving your old but usable goods. Every act of reuse reduces the burden on landfills and saves resources.</p>
+    <p>Try creative upcycling projects like turning jars into planters or t-shirts into tote bags. Share your ideas with friends and spread the green wave.</p>
+  </div>
+
+  <div class="section text-section">
+    <h2>🌱 What is Happening to the Planet?</h2>
+    <p>Every item you throw away has a story — and a chance for a second one.</p>
+    <p>At Don’t Trash It, we help you find the best ways to donate, reuse, and upcycle everyday items — from books and clothes to electronics and furniture.</p>
+    <p>Together, we can turn trash into treasure and waste into hope.</p>
+  </div>
+
+  <div class="section todo" id="todo">
+    <h2>✅ To-Do List</h2>
+    <ul>
+      <li><input type="checkbox"> Drop books at local library bin</li>
+      <li><input type="checkbox"> Try DIY tote bag project</li>
+      <li><input type="checkbox"> Plant a tree or care for a potted plant</li>
+      <li><input type="checkbox">Separate recyclables and compost from trash</li>
+      <li><input type="checkbox"> Walk or cycle instead of driving once this week</li>
+      <li><input type="checkbox"> Use a reusable shopping bag this week</li>
+      <li><input type="checkbox">Fix any leaking taps to save water</li>
+    </ul>
+  </div>
+
+  <div class="section notes">
+    <h2>♻ Quick Impact List</h2>
+    <ul>
+      <li><b>Donate</b> what you don’t need — someone else does.</li>
+      <li><b>Repair</b> instead of replacing.</li>
+      <li><b>Upcycle</b> into something new and beautiful.</li>
+      <li><b>Refuse</b> single-use plastics when you can.</li>
+      <li><b>Share</b> tools, books, or appliances with neighbors.</li>
+      <li><b>Switch</b> to reusable bottles, cups, and containers.</li>
+      <li><b>Support</b> eco-friendly and ethical brands.</li>
+    </ul>
+  </div>
+
+  <footer style="text-align:center; padding:2rem; background:#c9e4c5;">
+    <p>By Deetya🌿</P>
+  </footer>
+</body>
+</html>

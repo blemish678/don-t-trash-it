@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't Trash It</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fcfdf9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1583511655826-d95c301d1bc5');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem 4rem;
+      color: white;
+      text-align: center;
+      border-bottom: 5px dotted #d9e8d9;
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #c9e4c5;
+      padding: 1rem;
+    }
+   
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.8rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #3b4d39;
+      background-color: #e3f4df;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-weight: bold;
+    }
+  
+    nav a {
+      margin: 0 1.2rem;
+      color: #355e3b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      width: 120px;
+      height: 130px;
+      border-radius: 60px 60px 12px 12px;
+      background-color: #f0f5ee;
+      border: 2px solid #c9e4c5;
+      text-align: center;
+      padding: 1rem 0.5rem;
+      font-size: 0.95rem;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+     .tab:hover {
+      transform: translateY(-5px);
+      background-color: #eaf5e3;
+    }
+
+    .tab img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .text-section {
+      background-color: #f6fdf5;
+      border: 2px dashed #d0e8d0;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .text-section h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2rem;
+      color: #355e3b;
+      margin-bottom: 1rem;
+    }
+
+    .text-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #c9e4c5;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      border-top: 4px dotted #b6d9b6;
+    }
+
+    .calendar, .todo, .notes {
+      background-color: #f6fdf5;
+      border: 1px solid #d0e8d0;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #c9e4c5;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .todo ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .todo li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .notes ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    /* Filmstrip Styles */
+    .filmstrip {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 10px;
+      border: 10px solid black;
+      border-image: repeating-linear-gradient(
+          to bottom,
+          black 0,
+          black 15px,
+          white 15px,
+          white 25px,
+          black 25px
+      ) 20;
+      gap: 10px;
+      margin: 2rem auto;
+      width: fit-content;
+    }
+
+    .filmstrip img {
+      width: 200px;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Don't Trash It</h1>
+    <p>Turn clutter into kindness — donate, reuse, upcycle.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#donate">Donate</a>
+    <a href="#diy">Upcycle</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1sMhnafg19LiOO3_G2vA11H0Zq8WYsLDey3-qPkomIQRgcQ/viewform">Get Involved</a>
+  </nav>
+
+  <div class="tabs">
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Donate">
+      <p>Donate</p>
+    </div>
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="DIY">
+      <p>Upcycle</p>
+    </div>
+    <div class="tab">
+      <img src="https://cdn-icons-png.flaticon.com/512/151/151773.png" alt="Contact">
+      <p><a href= "https://docs.google.com/forms/d/e/1FAIpQLSf1sMhnafg19LiOO3_G2vA11H0Zq8WYsLDey3-qPkomIQRgcQ/viewform">Get Involved</a></p>
+    </div>
+  </div>
+
+  <div class="section text-section">
+    <h2>🌱 Your old can be someone’s new beginning.</h2>
+    <p>Every item you donate has the power to make a difference.</p>
+    <p>From a book that sparks imagination to a coat that keeps someone warm through winter — your contribution creates ripples of kindness.</p>
+    <p>Let’s make giving a habit, not just a holiday tradition.</p>
+  </div>
+
+<!-- Filmstrip Section -->
+<div class="filmstrip">
+    <img src="C:\Users\HP\Documents\avenue-815297_1280.jpg" alt="Image 1">
+    <img src="C:\Users\HP\Documents\trees-975091_1280.jpg" alt="Image 2">
+    <img src="C:\Users\HP\Documents\tree-569275_1280.jpg" alt="Image 3">
+    <img src="C:\Users\HP\Documents\alps-8368328_1280.jpg" alt="Image 4">
+    <img src="C:\Users\HP\Documents\lake-1679708_1280.jpg" alt="Image 5">
+</div>
+</section>
+
+<div class="section text-section">
+    <h2>🌿 Featured Causes</h2>
+    <ul>
+      <li><b><a href= "https://www.unep-wcmc.org/en/donate">UNEP-WCMC</b></a>:Protecting biodiversity for a sustainable and thriving planet.</li>
+      <li><b><a href= "https://www.greenpeace.org/india/en/act/donate/">Greenpeace</b></a>:Campaigning for a greener, healthier, and more peaceful world.</li>
+      <li><b><a href= "https://goonj.org/donate/">Goonj</b></a>:Channeling urban waste into rural development solutions while promoting dignity.</li>
+      <li><b><a href= "https://www.soschildrensvillages.in/donate-now/">SOS Children's Villages India</b></a>:Providing a loving home and brighter future for every child.</li>
+      <li><b><a href= "https://donor.nanhikali.org/dnrsponsornk?regionType=KCMET">Nanhi Kali</b></a>:Educating and empowering underprivileged girls for a brighter tomorrow.</li>
+      <li><b><a href= "https://www.cry.org/donation/">CRY(Child Rights and You)</b></a>:Ensuring every child has a happy, healthy, and creative childhood.</li>
+      <li><b><a href= "https://donate.smilefoundationindia.org/">Smile Foundation</b></a>:Providing education, healthcare, and livelihood support to underprivileged children and families.</li>
+      <li><b><a href= "https://www.helpageindia.org/donate/?gad_source=1&gad_campaignid=22804842685&gbraid=0AAAAADvSA0T63AjuNdtKMh9wpjM-Pe9UJ&gclid=CjwKCAjw49vEBhAVEiwADnMbbG8_NgueHWnsoYHdle81j413WwsANY-OX2N63MyfdgGntKOXU6ts1RoCmtUQAvD_BwE">HelpAge India</b></a>:Advocating for elderly rights and providing healthcare, support, and dignity in old age.</li>
+      <li><b><a href= "https://www.akshayapatra.org/onlinedonations">Akshaya Patra Foundation</b></a>:Serving mid-day meals to millions of underprivileged children to combat classroom hunger.
+      <li><b><a href= "https://www.indianredcross.org/ircs/donatenow/">Indian Red Cross Society</b></a>:Provides humanitarian aid, disaster relief, and health services to those in need.</li>
+    </ul>
+    </ul>
+  </div>
+
+ <div class="section text-section">
+    <h2>💡 Why Donate?</h2>
+    <ul>
+      <li><b>Reduce Waste</b>:Keep usable items out of landfills.</li>
+      <li><b>Support Communities</b>:Help those in need locally and globally.</li>
+      <li><b>Extend Product Life</b>:Every reuse saves resources.</li>
+      <li><b>Spread Kindness</b>:Acts of generosity inspire others.</li>
+ </div>
+
+<div class="section text-section">
+    <h2>📍 How to Donate</h2>
+    <ul>
+      <li><b>Choose your cause</b>:Select from books, clothes, furniture, electronics, and more.</li>
+      <li><b>Check condition</b>:Items should be clean, functional, and safe.</li>
+      <li><b>Find a location</b>:Drop-off points listed below or request a pickup.</li>
+      <li><b>Make it regular</b>:Mark your calendar for seasonal donation drives.</li>
+    </ul>
+    </ul>
+  </div>
+
+<footer style="text-align:center; padding:2rem; background:#c9e4c5;">
+    <p>By Deetya🌿</P>
+  </footer>
+</body>
+</html>
